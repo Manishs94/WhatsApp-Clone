@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./App.css";
 import Sidebar from './Sidebar';
 import Chat from "./Chat";
@@ -8,7 +8,7 @@ import {useStateValue} from "./StateProvider";
 
 
 function App() {
-	const [{ user }, dispatch] = useStateValue();
+	const [{ user }] = useStateValue();
   
 	return (
 	  // BEM naming convention
